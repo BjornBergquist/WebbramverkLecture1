@@ -126,11 +126,13 @@ header {
 
 .btn--primary {
   background-color: var(--clr-accent);
+  border: 0.2em solid var(--clr-accent);
 }
 
 .btn--primary:hover,
 .btn--primary:focus {
   background-color: var(--clr-accent-dark);
+  border-color: var(--clr-accent-dark);
 }
 
 .btn--secondary {
@@ -143,6 +145,7 @@ header {
 .btn--secondary:focus {
   background-color: var(--clr-primary-dark);
   color: var(--clr-secondary-light);
+  border: 0.2em solid var(--clr-primary-dark);
 }
 
 /* 3. Main */
