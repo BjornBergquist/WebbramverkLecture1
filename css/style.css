@@ -1,5 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
 /*
     Ljusblå: #A3D4D4
     Mörkblå: #05314C
     Röd:     #B92E2A 
 */
+
+/* 1. Global styles */
+
+:root{
+    --clr-primary: #A3D4D4;
+    --clr-primary-dark: #05314C;
+    --clr-secondary: #222; 
+    --clr-secondary-light: white; 
+    --clr-accent: #B92E2A; 
+    --clr-accent-dark: hsl(2, 66%, 35%); 
+}
+
+body{ /* Tar bort förinställd rymd i body, då jag hellre vill ändra det själv */
+    margin: 0; 
+    padding: 0;
+    background-color: var(--clr-secondary-light);
+    color: var(--clr-secondary);
+    font-family: 'Poppins', sans-serif;
+} 
+
+*, *::before, *::after{  /* Inkluderar padding och border i width och height utrökningar. */
+    box-sizing: border-box
+}
+
+img{ /* Gör så att bilder inte växer sig större än sin förälder. */
+    max-width: 100%
+} 
+
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-secondary-light);
+    background: var(--clr-primary-dark);
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    margin: 1em;
+    font-weight: bold;
+}
+
+.btn:hover, .btn:focus{
+    background-color: var(--clr-accent);
+}
+
+.btn:active{
+    transform: scale(0.99);
+}
+/* 2. Header styles */
+
+.headerbg{
+    background: var(--clr-primary);
+    position: absolute;
+    height: 16rem;
+    width: 100%;
+    z-index: -1;
+}
+
+header{
+    width: 100%;
+}
+
+.header__img{
+    border-radius: 50%;
+    border: 0.5em solid var(--clr-secondary-light);
+}
+
+.header__wrapper{
+    width: max-content;
+    margin: 0 auto;
+}
+
+.page__nav{
+    padding: 2em 2em 0;
+}
+
+.page__nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.page__nav li{
+    margin: 0.25em 0;
+}
+
+.page__nav a{
+    color: var(--clr-primary-dark);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.page__nav a:hover,
+.page__nav a:focus{
+    color: var(--clr-accent);
+    cursor: pointer;
+   ;
+}
+
+.header__text{
+    padding: 0 2em;
+    color: var(--clr-primary-dark)
+}
+
+.header__text h1, .header__text h3{
+    margin: 0;
+    text-align: center;
+}
+
+.header__buttons{
+    width: max-content;
+    margin: 0 auto;
+}
+
+.btn--primary{
+    background-color: var(--clr-accent);
+}
+
+.btn--primary:hover, .btn--primary:focus{
+    background-color: var(--clr-accent-dark);
+}
+
+.btn--secondary{
+    background-color: var(--clr-secondary-light);
+    color: var(--clr-primary-dark);
+    border: 0.2em solid;
+}
+
+.btn--secondary:hover, .btn--secondary:focus{
+    background-color: var(--clr-primary-dark);
+    color: var(--clr-secondary-light)
+}
+
+/* 3. Main */
+.mystory, .work__text{
+    margin: 1em 2em;
+    max-width: 40em;
+}
+
+
+/* 4. Footer */ 
+.mainfooter{
+    padding: 1em 2em;
+    background-color: var(--clr-primary-dark);
+    color: var(--clr-secondary-light);
+}
+
+.icon__wrapper{
+    display: inline-block;
+    width: 30%;
+}
