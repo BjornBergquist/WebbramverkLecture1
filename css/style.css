@@ -167,14 +167,20 @@ main {
 }
 
 .mystory,
-.work__text {
+.work__text,
+.portfolio {
   margin: 1em 2em;
   max-width: 40em;
 }
 
+.portfolio {
+  text-align: center;
+}
+
 @media screen and (min-width: 700px) {
   .mystory,
-  .work {
+  .work,
+  .portfolio {
     margin: 2em auto;
     max-width: 40em;
     box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.2);
@@ -183,6 +189,40 @@ main {
 
   .mystory {
     padding: 1em 2em;
+  }
+
+  .portfolio {
+    padding-top: 1em;
+  }
+
+  .flex__container {
+    padding: 0 2em 2em;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 1em;
+    justify-content: flex-start;
+  }
+
+  .card {
+    background-color: #fbfbfb;
+    flex-shrink: 0;
+    flex-grow: 1;
+    width: 30%;
+    box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .card:last-child {
+    flex-grow: 0;
+  }
+
+  .card h3,
+  .card p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .card .btn {
+    padding-inline: 2em;
   }
 }
 
