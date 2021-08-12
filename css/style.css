@@ -171,10 +171,15 @@ main {
   font-size: 4em;
 }
 
-.footer__icon:nth-child(2) {
+.footer__link:nth-child(2) {
   margin: 0 10%;
 }
 
 .mainfooter nav {
-  margin: 0 auto;
+  margin: 2em auto 0;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
 }
