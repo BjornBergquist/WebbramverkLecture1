@@ -1,0 +1,33 @@
+body {
+  display: grid;
+  margin: 0;
+  height: 100vh;
+  grid-template-areas: /* Ska vara inom citat-tecken */
+    "gris gris gris gris"
+    ".    section section aside"
+    "footer footer footer footer";
+}
+
+header {
+  grid-area: gris; /* Ska inte vara inom citat-tecken */
+  background-color: darkcyan;
+  min-height: 15vh;
+}
+
+section {
+  grid-area: section;
+  min-height: 75vh;
+  background-color: darkorange;
+}
+
+aside {
+  grid-area: aside;
+  min-height: 50vh;
+  background: darksalmon;
+}
+
+footer {
+  grid-area: footer;
+  background-color: darkcyan;
+  min-height: 10vh;
+}
