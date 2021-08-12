@@ -109,6 +109,9 @@ header {
 }
 
 @media screen and (min-width: 700px) {
+  .page__nav {
+    padding: 1em 2em;
+  }
   .page__nav ul {
     display: flex;
     justify-content: center;
