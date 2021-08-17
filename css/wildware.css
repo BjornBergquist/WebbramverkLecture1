@@ -140,6 +140,14 @@ header {
   margin-bottom: 2em;
 }
 
+@media screen and (max-width: 400px) {
+  .hero h1 {
+    max-width: 10ch;
+    overflow-wrap: hyphenate-word;
+    hyphens: auto;
+  }
+}
+
 .hero h3 {
   padding: 1em 1.5em;
   background-color: var(--clr-primary);
