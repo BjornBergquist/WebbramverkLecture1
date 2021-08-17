@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/************************/
+/* 01. Globals          */
+/* 02. Nav              */
+/* 03. Hero             */
+/************************/
+
+:root {
+  --clr-primary: #213524;
+  --clr-primary-light: #a9beac;
+  --clr-secondary: #ffffff;
+  --clr-accent: #f2b926;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--clr-primary-light);
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  color: var(--clr-secondary);
+}

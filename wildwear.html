@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/wildware.css" />
     <title>WildWear Welcome Page</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="mainnav">
         <span class="logo">
           <svg
             width="24"
@@ -24,7 +25,38 @@
           </svg>
           <h2>WildWear</h2>
         </span>
+        <div class="hamburger">
+          <div class="hamburger__line hamburger__line1"></div>
+          <div class="hamburger__line hamburger__line2"></div>
+          <div class="hamburger__line hamburger__line3"></div>
+        </div>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Store</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
       </nav>
+
+      <div class="hero">
+        <h1 class="hero__title">Clothing for professional survival experts</h1>
+        <h3>
+          WildWear offers the best shoes, shirts and general outdoors wear.
+        </h3>
+        <div>
+          <a href="#store">Store</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="scrollIndicator"></div>
     </header>
   </body>
 </html>
